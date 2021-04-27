@@ -27,7 +27,7 @@ const atTheOldToad = {
     }
 
     for (let i = 0; i < potions.length; i += 1) {
-      if (potions[i].name === potionName) {
+      if (this.potions[i].name === potionName) {
         potions.splice(i, 1);
       }
     }
@@ -43,7 +43,7 @@ const atTheOldToad = {
       return `Зелья ${oldName} нет в инвентаре!`;
     }
 
-    for (let i = 0; i < this.potions.length; i += 1) {
+    for (let i = 0; i < potions.length; i += 1) {
       if (potions[i].name === oldName) {
         potions[i].name = newName;
       }
